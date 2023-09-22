@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Kalkulator</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+<br>
+    <header>Kalkulator Aritmatika</header>
+    <h1>Deret Fibonacci</h1>
+    <label for="inputVariable">Masukkan Variabel:</label>
+    <input type="number" id="inputVariable" placeholder="Input Angka Positif" class="form-control">
+    <button onclick="hitungFibonacci()">Hitung Deret Fibonacci</button>
+    <div id="hasilPerhitungan"></div><br>
+    <script src="fibonacci/script.js"></script>
+
+<br>
+<h2>Menghitung Volume Bangun Ruang</h2><br> </br>
+<p>Menghitung Volume Kubus</p>
+    <label for="inputVolume">Masukkan Angka:</label>
+    <input type="number" id="inputVolume" placeholder="Masukkan Panjang Sisi" class="form-control">
+    <button onclick="hitungVolume()">Hitung Volume Bangun Ruang Kubus</button>
+    <div id="hasilPerhitunganVolume"></div>
+    <script src="bangun_ruang_kubus/kubus.js"></script>
+</br>
+
+<br>
+<p>Menghitung Volume Balok</p>
+    <label for="panjangBalok">Panjang Balok:</label>
+    <input type="number" id="panjangBalok" placeholder="Masukkan Panjang" class="form-control">
+    <label for="lebarBalok">Lebar Balok:</label>
+    <input type="number" id="lebarBalok" placeholder="Masukkan Lebar" class="form-control">
+    <label for="tinggiBalok">Tinggi Balok:</label>
+    <input type="number" id="tinggiBalok" placeholder="Masukkan Tinggi" class="form-control">
+    <button onclick="hitungVolumeBalok()">Hitung Volume Balok</button>
+    <div id="hasilPerhitunganVolumeBalok"></div>
+    <script src="bangun_ruang_balok/balok.js"></script>
+    </br>
+
+    <br>
+    <h3>Ubah Warna Latar Belakang:</h3>
+    <select id="warnaSelector" onchange="ubahWarna(this.value)">
+        <option value="default">Default</option>
+        <option value="biru">Biru</option>
+        <option value="darktheme">Dark Theme</option>
+        <option value="hijau">Hijau</option>
+        <option value="abuabu">Abu-abu</option>
+    </select>
+    <script src="ganti_warna/warna.js"></script>
+    </br>
+
+    <footer>
+        
+            Puguh Setiyono (2215101081)
+        
+    </footer>
+    <script>
+        window.onload = function() {
+            console.log("Halaman selesai dimuat.");
+        };
+    </script>
+</body>
+</html>
